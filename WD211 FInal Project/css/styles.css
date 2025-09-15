@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  /* Order and Archive Containers */
+  #orders-list, #order-details, #archived-orders {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Orders List */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #e9e9f0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  li:hover {
+    background: #d1d1e0;
+  }
+  
+  /* Order Details Form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input, select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #update-status-btn {
+    background: #007bff;
+    color: white;
+  }
+  
+  #update-status-btn:hover {
+    background: #0056b3;
+  }
+  
+  #archive-order-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  #archive-order-btn:hover {
+    background: #218838;
+  }
+  
+  /* Hide elements when not needed */
+  .hidden {
+    display: none;
+  }
+  
+  /* Archived Orders Styling */
+  #archived-orders {
+    background: #f8f8f8;
+  }
+  
+  #archived-orders ul li {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  #archived-orders ul li:hover {
+    background: #c3e6cb;
+  }
+  
+  /* Error messages */
+  .text-red-500 {
+    color: #e3342f;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+  

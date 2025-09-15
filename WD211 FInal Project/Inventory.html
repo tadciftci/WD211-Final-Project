@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/inventory.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div id="orders-list">
+        <h2>Active Orders</h2>
+        <ul id="orders-ul">
+            <!-- Orders will be dynamically added here by JavaScript -->
+        </ul>
+    </div>
+
+    <div id="order-details">
+        <h2>Order Details</h2>
+        <div id="order-error" class="hidden" style="color: red; margin-top: 10px;"></div>
+        <form id="order-form">
+            <label for="item-name">Item Name:</label>
+            <input type="text" id="item-name" readonly>
+
+            <label for="item-description">Item Description:</label>
+            <input type="text" id="item-description" readonly>
+
+            <label for="item-status">Item Status:</label>
+            <select id="item-status">
+                <option value="received">Received</option>
+                <option value="waiting for products">Waiting for Products</option>
+                <option value="in preparation">In Preparation</option>
+                <option value="ready for shipping">Ready for Shipping</option>
+                <option value="shipped">Shipped</option>
+              </select>
+
+            <label for="item-brand">Item Brand:</label>
+            <input type="text" id="item-brand" readonly>
+
+            <button type="button" id="update-status-btn">Update Status</button>
+            <button type="button" id="archive-order-btn" class="hidden">Archive Order</button>
+        </form>
+    </div>
+
+    <div id="archived-orders">
+        <h2>Archived Orders</h2>
+        <ul id="archived-orders-ul">
+            <!-- Archived orders will be displayed here -->
+        </ul>
+    </div>
+
+</body>
+</html>
